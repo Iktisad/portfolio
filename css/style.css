@@ -419,6 +419,11 @@ header{
 }
 
 
+.portfolio{
+	padding:1em;
+}
+
+@media(min-width: 600px){
 
 .portfolios{
 	display:grid;
@@ -448,6 +453,7 @@ header{
 .portfolio__item:focus .portfolio__img{
 	transform:scale(1.2);
 	opacity: .25;
+}
 }
 
 
@@ -530,15 +536,30 @@ header{
 
 /*Table*/
 .my-table{
+	display:flex;
 	justify-content: center;
 	background-color:#4B515D;
 	padding:7em;
 	border: 4px solid var(--clr-accent);
 
 }
+
+.td img{
+	display:flex;
+	
+	
+}
+
+@media(min-width:600px){
+
+	.td img{
+		height: 200px;
+		width:100px;
+	}
+	}
 	.content-table {
   border-collapse: collapse;
-  margin: 25px 300px;
+  margin: 25px 0px;
   font-size: 0.9em;
   min-width: 400px;
   border-radius: 5px 5px 0 0;
